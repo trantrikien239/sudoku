@@ -1,3 +1,4 @@
 data/
 notebooks/
 .vscode/
+__pycache__
