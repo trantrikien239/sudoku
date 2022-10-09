@@ -1,10 +1,11 @@
 # sudoku
-I'm making a sudoku solver
+This is a Sudoku solving program (or Sudoku AI to be fancy) that I wrote from scratch to practice data manipulation using numpy as well as testing different Sudoku algorithms.
 
-First version with the game play core and the back_tracking solver
+Try out the algorithms with the code below:
 
-To try the solver, go to `src/solver` and run:
-
-```
-python backtrack.py
+```py
+# Backtrack Algorithm
+python entrypoint.py BacktrackSolver
+# A solver that mimic human tactic
+python entrypoint.py Human
 ```
