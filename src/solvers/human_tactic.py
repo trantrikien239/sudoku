@@ -103,7 +103,7 @@ class HumanTactic(BacktrackSolver):
                             self.possibilities[ex_ind] = [num for num in self.possibilities[ex_ind] if num not in set(all_poss)]
                         break
 
-    @timeit
+    # @timeit
     def solve(self):
         hash_before = 0
         hash_after = 1

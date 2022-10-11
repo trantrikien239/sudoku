@@ -70,7 +70,7 @@ class BacktrackSolver(Game):
         else:
             return False
 
-    @timeit
+    # @timeit
     def solve(self):
         cnt = 0
         direction = 1
@@ -92,15 +92,15 @@ class BacktrackSolver(Game):
             else:
                 cnt += 1 * direction
             
-        # import pdb; pdb.set_trace()
-        print(f'Number of iteration: {cnt_iteration}')
-        print(f'Number of forward: {cnt_forward}')
-        print(f'Number of backtrack: {cnt_backtrack}')
+        # print(f'Number of iteration: {cnt_iteration}')
+        # print(f'Number of forward: {cnt_forward}')
+        # print(f'Number of backtrack: {cnt_backtrack}')
         if not self.check_solution():
             print('The puzzle is infeasible')
             print('Last board: \n', self.board)
         else:
-            print('The solution is: \n', self.board)
+            # print('The solution is: \n', self.board)
+            return self.board
 
 class BacktrackProba(BacktrackSolver):
     def __init__(self, game_board):
